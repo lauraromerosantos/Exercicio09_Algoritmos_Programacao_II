@@ -1,0 +1,21 @@
+from person import Person, PF, PJ
+
+p = Person(2331, 'Laura', 'Rua Liberdade, 166', '(51) 99978 - 9797')
+pf = PF(2332, 'Mariana', 'Rua Castro Alves, 9012', '(51) 98876 - 9999', '000.111.222-44', 24, 70, 1.80)
+pj = PJ(2333, 'Valentina', 'Av Independência, 873', '(51) 98867 - 9999', '000.111.222-55', 2234439098, 250)
+
+print ('Pessoa: ')
+p.PrintName()
+p._PrintAddress()
+p._PrintPhone()
+print ('_'*30)
+print ('Pessoa Física: ')
+pf.PrintName()
+pf.PrintCPF()
+pf.PrintAge()
+pf.CalcuteIMC()
+pf.PrintIMC()
+print ('_'*30)
+print ('Pessoa Jurídica: ')
+pj.PrintStateRegister()
+pj.PrintCNPJ()
